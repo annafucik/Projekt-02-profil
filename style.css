@@ -1,7 +1,14 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 BARVY
@@ -14,8 +21,117 @@ tlačítko facebook         #3b5998
 tlačítko twitter          #1da1f2
 */
 
-
+/* Body */
 body {
   background-color: #bdc3c7;
+  color: #bdc3c7;
+  line-height: 1.5;
 }
 
+/* Písmo */
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size:large;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif ;
+  color: white;
+  font-size: 90px;
+  margin-top: 0px;
+} 
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+/* Hlavní */
+.profil {
+  background-color: #31363b;
+  margin: 15%;
+  box-shadow: black 4px 6px 20px;
+}
+
+.hlavicka {
+  position: relative;
+}
+
+.obsah {
+  padding: 5%;
+}
+
+/* Fotka */
+.foto {
+width: 100%;
+}
+
+/* Logo */
+.logo {
+  position:absolute;
+  top: 90%;
+  right: 10%;
+  background-color: #b92e81;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Odkazy */
+.odkazy {
+  padding-left: 0;
+}
+
+.odkazy a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.odkazy li {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  display:flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.FBaT {
+  display:flex;
+  flex-direction: row;
+}
+
+/* Portfolio */
+.portfolio {
+  border-top: solid #3f464d 5px;;
+}
+.portfolio:hover {
+  color:white;
+  background-color: #e74c3c;
+}
+
+/* Facebook */
+.facebook {
+  border-top: solid #3f464d 5px;
+  flex-grow: 1;
+}
+.facebook:hover {
+  color:white;
+  background-color: #3b5998;
+}
+
+/* Twitter */
+.twitter {
+  border-top: solid #3f464d 5px;
+  border-left: solid #3f464d 5px;
+  flex-grow: 1;
+}
+.twitter:hover {
+  color: white;
+  background-color: #1da1f2;
+}
